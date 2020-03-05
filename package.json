@@ -1,0 +1,22 @@
+{
+  "name": "11ty-tailwind-gulp-starter",
+  "version": "1.0.0",
+  "description": "A starter package using 11ty, Tailwind CSS, Gulp and other technologies",
+  "main": "index.html",
+  "scripts": {
+    "develop": "gulp & npx @11ty/eleventy --serve",
+    "build": "gulp build && npx @11ty/eleventy",
+    "clean": "rm -R _site"
+  },
+  "author": "Riley Amos",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {}
+}
