@@ -2,8 +2,9 @@
 
 - [11ty](https://www.11ty.dev/docs/)
 - [NunJucks](https://mozilla.github.io/nunjucks/templating.html) - _For Templating_
-- [Tailwind]()
-- [Gulp]()
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Gulp](https://gulpjs.com/)
+- [PostCSS](https://postcss.org/)
 - [Prettier](https://prettier.io/docs/en/options.html) - _Enable your editor to "format on save"._
 
 ### Developing
@@ -16,6 +17,15 @@ npm run develop
 
 ```
 
+**Test Production Stylesheets**
+_PurgeCSS is only run in production_
+
+```
+
+NODE_ENV=production gulp build
+
+```
+
 **For Production:**
 
 ```
@@ -23,10 +33,3 @@ npm run develop
 npm run build
 
 ```
-
----
-
-**TODO:**
-
-- Add `.njk` formatting w/ prettier.
-- `npm run develop` updates `scss` files correctly, but requires a manual save on the outputted `final.css` file to trigger browser refresh.

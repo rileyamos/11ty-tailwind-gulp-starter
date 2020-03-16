@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Contact Us</title>
-    <meta name="description" content="Use this page to contact us!" />
-    <link rel="stylesheet" href="stylesheets/final.css">
+    <meta name="description" content="Use this page to contact us!"/>
+    <link rel="stylesheet" href="/stylesheets/final.min.css">
   </head>
   <body>
-    <nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/contact/">Contact</a></li>
-  </ul>
+    <nav class="flex container mx-auto flex-col p-4 sm:justify-between sm:flex-row">
+  <div>
+    <a class="text-lg flex sm:inline-flex mb-4" href="/">Home</a>
+  </div>
+  <div>
+    <a class="text-lg flex sm:inline-flex mr-4 mb-4 sm:mb-0" href="#">About</a>
+    <a class="text-lg flex sm:inline-flex mb-4 sm:mb-0" href="/contact/">
+      <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+        Contact Us
+      </button>
+    </a>
+  </div>
 </nav>
 
-
-    <main>
+    <main class="container mx-auto px-4">
       
 <p>Contact Page!</p>
 
     </main>
 
     <footer>
-  <small>Copyright Notice.</small>
-</footer>
+  <div class="container mx-auto text-center">
+    <small>Copyright Notice.</small>
+  </div>
 
+</footer>
   </body>
 </html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>{{title}}</title>
-    <meta name="description" content="{{description}}" />
-    <link rel="stylesheet" href="{{ 'stylesheets/final.css' | url }}">
+    <meta name="description" content="{{description}}"/>
+    <link rel="stylesheet" href="/stylesheets/final.min.css">
   </head>
   <body>
     {% include "components/nav.njk" %}
 
-    <main>
+    <main class="container mx-auto px-4">
       {{ content | safe }}
     </main>
 
